@@ -102,7 +102,7 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
+    .redes a:hover{
     background-color: #00eeff;
 }
 .sobremi{
@@ -137,6 +137,7 @@ html{
 {
     width: 50%;
 }
+
 .sobremi .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
@@ -653,4 +654,12 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+    .fila button{
+        margin-bottom: 20%;
+    }
+}
+#Ratota
+{
+    width: 100%;
+    display: none;
 }

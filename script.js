@@ -9,7 +9,11 @@ function mostrarOcultarMenu(){
         menuVisible = true;
     }
 }
-
+function SacarRatota()
+{
+    var Rata=document.getElementById("Ratota");
+    Rata.style.display="block";
+}
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
@@ -33,6 +37,7 @@ function efectoHabilidades(){
         habilidades[9].classList.add("proyect");
     }
 }
+
 
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
