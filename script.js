@@ -37,9 +37,6 @@ function efectoHabilidades(){
         habilidades[9].classList.add("proyect");
     }
 }
-
-
-
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
