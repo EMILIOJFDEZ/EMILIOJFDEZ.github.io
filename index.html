@@ -2,360 +2,289 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="shortcut icon" href="img/icono.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio EJFF</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/icono.png">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
+    <header>
+        <div class="contenedor-header">
             <div class="logo">
                 <a href="#">EJFF</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </header>
-    </div>
-
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
-            </div>
-            <h1>EMILIO JOSÉ</h1>
-            <h2>Desarrollador de software y videojuegos</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100092394882239"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/EJFF04"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/emilio-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/EMILIOJFDEZ"><i class="fa-brands fa-github-alt"></i></a>
-            </div>
         </div>
-    </section>
+    </header>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Emilio José Fernández Fernández.</span>
-                <br>
-                Soy un programador con años de experiencia amante de los ordenadores, el anime y los videojuegos, también me gusta cocinar y hacer natación. Si, soy un otaku que se ducha B)</p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            05-04-2004
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            +34 605 83 71 15
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            emiliojfdez2004@gmail.com
-                        </li>
-                        <li>
-                            <strong>¿Donde vivo?</strong>
-                            Chauchina, Granada, España
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>Desarrollador de software, aplicaciones y páginas</span>
-                        </li>
-                    </ul>
+    <main>
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/hero.png" alt="Emilio José">
                 </div>
-
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-utensils"></i>
-                            <span>COCINA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>EJERCICIO</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>COCHES</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        
-                    </div>
+                <h1>EMILIO JOSÉ</h1>
+                <h2>Desarrollador de software y videojuegos</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100092394882239" aria-label="Facebook"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://twitter.com/EJFF04" aria-label="Twitter"><span class="fab fa-twitter"></span></a>
+                    <a href="https://www.linkedin.com/in/emilio-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez/" aria-label="LinkedIn"><span class="fab fa-linkedin-in"></span></a>
+                    <a href="https://github.com/EMILIOJFDEZ" aria-label="GitHub"><span class="fab fa-github-alt"></span></a>
                 </div>
             </div>
-            <button onclick="window.location.href='https://drive.google.com/drive/u/1/folders/1gfttOMMSn9bgiS6km1h7-kR4cES_DWIc';"">
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Photoshop</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>40%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Wordpress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Drupal</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- SECCION SOBRE MI -->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Emilio José Fernández Fernández.</span>
+                    <br>
+                    Soy un programador con años de experiencia amante de los ordenadores, el anime y los videojuegos, también me gusta cocinar y hacer natación. Sí, soy un otaku que se ducha B)</p>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>FPGS Desarrollo de aplicaciones web</h4>
-                        <span class="casa">IES Francisco Ayala</span>
-                        <span class="fecha">2024 - 2025</span>
-                        <p>Enlace al centro educativo:</p>
-                        <a href="https://www.iesayala.com/">Haz click aquí</a>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>FPGS Desarrollo de aplicaciones Multiplataforma</h4>
-                        <span class="casa">IES Hermenegildo Lanz</span>
-                        <span class="fecha">2022 - 2024</span>
-                        <p>Enlace al centro educativo:</p>
-                        <a href="https://www.ieshlanz.es/">Haz click aquí</a>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>FPGM Sistemas Microinformáticos y Redes</h4>
-                        <span class="casa">IES Zaidín Vergeles</span>
-                        <span class="fecha">2020-2022</span>
-                        <p>Enlace al centro educativo:</p>
-                        <a href="https://www.ieszaidinvergeles.org/">Haz click aquí</a>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Back-end Developer</h4>
-                        <span class="casa">Google United States</span>
-                        <span class="fecha">2032-2054</span>
-                        <p>Enlace a la web:</p>
-                        <a href="https://www.google.com/">Haz click aquí</a>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front-end Developer</h4>
-                        <span class="casa">Playstation España</span>
-                        <span class="fecha">2027 - 2032</span>
-                        <p>Enlace a la web:</p>
-                        <a href="https://www.playstation.com/es-es/">Haz click aquí</a>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Reparación de equipos</h4>
-                        <span class="casa">Centro Office Chauchina</span>
-                        <span class="fecha">2024-2027</span>
-                        <p>Enlace a la web:</p>
-                        <a href="http://www.centroafi.com/">Haz click aquí</a>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Nº de teléfono (Añade prefijo si no es Español)">
-                    <input type="text" placeholder="Correo electrónico">
-                    <input type="text" placeholder="Asunto">
-                    <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button onclick="SacarRatota()">
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
                         <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Calle Jorquera 33
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Número: 605 83 71 15
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: emiliojfdez2004@gmail.com
-                            </li>
+                            <li><strong>Cumpleaños:</strong> 05-04-2004</li>
+                            <li><strong>Teléfono:</strong> +34 605 83 71 15</li>
+                            <li><strong>Email:</strong> emiliojfdez2004@gmail.com</li>
+                            <li><strong>¿Dónde vivo?</strong> Chauchina, Granada, España</li>
+                            <li><strong>Cargo:</strong> <span>Desarrollador de software, aplicaciones y páginas</span></li>
                         </ul>
                     </div>
+
+                    <!-- intereses -->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <span><i class="fa-solid fa-gamepad"></i> JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <span><i class="fa-solid fa-headphones"></i> MÚSICA</span>
+                            </div>
+                            <div class="interes">
+                                <span><i class="fa-solid fa-plane"></i> VIAJAR</span>
+                            </div>
+                            <div class="interes">
+                                <span><i class="fa-solid fa-utensils"></i> COCINA</span>
+                            </div>
+                            <div class="interes">
+                                <span><i class="fa-solid fa-person-running"></i> EJERCICIO</span>
+                            </div>
+                            <div class="interes">
+                                <span><i class="fa-solid fa-book"></i> LIBROS</span>
+                            </div>
+                            <div class="interes">
+                                <span><i class="fa-solid fa-car"></i> COCHES</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/drive/u/1/folders/1gfttOMMSn9bgiS6km1h7-kR4cES_DWIc" class="btn-cv">Descargar CV <span class="fa-solid fa-download"></span></a>
+            </div>
+        </section>
+
+        <!-- SECCION SKILLS -->
+        <section id="skills" class="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 60%;"><span>60%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;"><span>80%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Photoshop</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 40%;"><span>40%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Wordpress</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 90%;"><span>90%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Drupal</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 60%;"><span>60%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Professional Skills -->
+                    <div class="col">
+                        <h3>Professional Skills</h3>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;"><span>80%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 70%;"><span>70%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 100%;"><span>100%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 75%;"><span>75%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Project Management</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;"><span>80%</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <img src="img/Ratota.jpg" id="Ratota" alt="Ratota">
-    <!-- footer -->
+        </section>
+
+        <!-- SECCION CURRICULUM -->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>FPGS Desarrollo de aplicaciones web</h4>
+                            <span class="casa">IES Francisco Ayala</span>
+                            <span class="fecha">2024 - 2025</span>
+                            <p>Enlace al centro educativo: <a href="https://www.iesayala.com/">Haz click aquí</a></p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>FPGS Desarrollo de aplicaciones Multiplataforma</h4>
+                            <span class="casa">IES Hermenegildo Lanz</span>
+                            <span class="fecha">2022 - 2024</span>
+                            <p>Enlace al centro educativo: <a href="https://www.ieshlanz.es/">Haz click aquí</a></p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>FPGM Sistemas Microinformáticos y Redes</h4>
+                            <span class="casa">IES Zaidín Vergeles</span>
+                            <span class="fecha">2020-2022</span>
+                            <p>Enlace al centro educativo: <a href="https://www.ieszaidinvergeles.org/">Haz click aquí</a></p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+                        <div class="item der">
+                            <h4>Back-end Developer</h4>
+                            <span class="casa">Google United States</span>
+                            <span class="fecha">2032-2054</span>
+                            <p>Enlace a la web: <a href="https://www.google.com/">Haz click aquí</a></p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Front-end Developer</h4>
+                            <span class="casa">Playstation España</span>
+                            <span class="fecha">2027 - 2032</span>
+                            <p>Enlace a la web: <a href="https://www.playstation.com/es-es/">Haz click aquí</a></p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Reparación de equipos</h4>
+                            <span class="casa">Centro Office Chauchina</span>
+                            <span class="fecha">2024-2027</span>
+                            <p>Enlace a la web: <a href="http://www.centroafi.com/">Haz click aquí</a></p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Nº de teléfono (Añade prefijo si no es Español)">
+                        <input type="text" placeholder="Correo electrónico">
+                        <input type="text" placeholder="Asunto">
+                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button onclick="SacarRatota()">Enviar Mensaje <span class="fa-solid fa-paper-plane"></span></button>
+                    </div>
+                    <!-- Mapa -->
+                    <div class="col">
+                        <img src="img/ubicacion.png" alt="Ubicación">
+                        <div class="info">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i> Calle Jorquera 33</li>
+                                <li><i class="fa-solid fa-mobile-screen"></i> Número: 605 83 71 15</li>
+                                <li><i class="fa-solid fa-envelope"></i> Email: emiliojfdez2004@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
+        <a href="#inicio" class="arriba"><span class="fa-solid fa-angles-up"></span></a>
         <div class="redes">
-            <a href="https://www.facebook.com/profile.php?id=100092394882239"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/EJFF04"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/emilio-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/EMILIOJFDEZ"><i class="fa-brands fa-github-alt"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100092394882239" aria-label="Facebook"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://twitter.com/EJFF04" aria-label="Twitter"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.linkedin.com/in/emilio-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez/" aria-label="LinkedIn"><span class="fab fa-linkedin-in"></span></a>
+            <a href="https://github.com/EMILIOJFDEZ" aria-label="GitHub"><span class="fab fa-github-alt"></span></a>
         </div>
     </footer>
 </body>
