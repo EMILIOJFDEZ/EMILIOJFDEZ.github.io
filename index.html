@@ -17,11 +17,11 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -53,11 +53,10 @@
             <div class="contenido-seccion">
                 <h2>Sobre Mí</h2>
                 <p>
-                    <span>Hola, soy Emilio José Fernández Fernández y vivo en España..</span>
+                    <span>Hola, soy Emilio José Fernández Fernández y vivo en España.</span>
                     <br>
                     Hablo español e inglés, y desde pequeño siempre me he sentido apasionado por los ordenadores.
-                    Actualmente estoy estudiando en una formación profesional
-                    superior de desarrollo de aplicaciones multiplataforma. </p>
+                    Actualmente estoy estudiando en una formación profesional superior de desarrollo de aplicaciones multiplataforma. </p>
 
                 <div class="fila">
                     <!-- datos personales -->
@@ -186,64 +185,37 @@
             <div class="contenido-seccion">
                 <h2>Curriculum</h2>
                 <div class="fila">
-                    <div class="col izquierda">
+                    <div class="col">
                         <h3>Educación</h3>
-                        <div class="item izq">
-                            <h4>FPGS Desarrollo de aplicaciones Multiplataforma</h4>
-                            <span class="casa">IES Hermenegildo Lanz</span>
-                            <span class="fecha">2022 - Presente</span>
-                            <p>Enlace al centro educativo: <a href="https://www.ieshlanz.es/">Haz click aquí</a></p>
-                            <div class="conectori">
-                                <div class="circuloi"></div>
+                        <div class="item">
+                            <span class="fa-solid fa-graduation-cap"></span>
+                            <div class="info">
+                                <h4>Desarrollo de Aplicaciones Multiplataforma</h4>
+                                <p>Centro XYZ - 2020-2022</p>
                             </div>
                         </div>
-                        <div class="item izq">
-                            <h4>FPGM Sistemas Microinformáticos y Redes</h4>
-                            <span class="casa">IES Zaidín Vergeles</span>
-                            <span class="fecha">2020-2022</span>
-                            <p>Enlace al centro educativo: <a href="https://www.ieszaidinvergeles.org/">Haz click aquí</a></p>
-                            <div class="conectori">
-                                <div class="circuloi"></div>
-                            </div>
-                        </div>
-                        <div class="item izq">
-                            <h4>Educación Secundaria Obligatoria</h4>
-                            <span class="casa">IES Arjé</span>
-                            <span class="fecha">2016 - 2020</span>
-                            <p>Enlace al centro educativo: <a href="https://www.iesarje.com/">Haz click aquí</a></p>
-                            <div class="conectori">
-                                <div class="circuloi"></div>
+                        <div class="item">
+                            <span class="fa-solid fa-graduation-cap"></span>
+                            <div class="info">
+                                <h4>Bachillerato en Ciencias</h4>
+                                <p>Instituto ABC - 2018-2020</p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col derecha">
-                        <h3>Experiencia de trabajo</h3>
-                        <div class="item der">
-                            <h4>Trabajo de prácticas de grado medio</h4>
-                            <span class="casa">Arena Gaming</span>
-                            <span class="fecha">Marzo 2022 - Junio 2022</span>
-                            <p>Enlace a la web: <a href="https://www.arenagaming.es/">Haz click aquí</a></p>
-                            <div class="conectord">
-                                <div class="circulod"></div>
+                    <div class="col">
+                        <h3>Experiencia Laboral</h3>
+                        <div class="item">
+                            <span class="fa-solid fa-briefcase"></span>
+                            <div class="info">
+                                <h4>Desarrollador Web Junior</h4>
+                                <p>Empresa XYZ - 2022-presente</p>
                             </div>
                         </div>
-                        <div class="item der">
-                            <h4>Voluntario en evento de Ficzone</h4>
-                            <span class="casa">Ficzone Granada 2022</span>
-                            <span class="fecha">2 de abril y 3 de abril 2022</span>
-                            <p>Enlace a la web: <a href="https://www.ficzone.com/">Haz click aquí</a></p>
-                            <div class="conectord">
-                                <div class="circulod"></div>
-                            </div>
-                        </div>
-                        <div class="item der">
-                            <h4>Voluntario en evento de Ficzone</h4>
-                            <span class="casa">Ficzone Granada 2022</span>
-                            <span class="fecha">2 de abril y 3 de abril 2022</span>
-                            <p>Enlace a la web: <a href="https://www.ficzone.com/">Haz click aquí</a></p>
-                            <div class="conectord">
-                                <div class="circulod"></div>
+                        <div class="item">
+                            <span class="fa-solid fa-briefcase"></span>
+                            <div class="info">
+                                <h4>Prácticas Profesionales</h4>
+                                <p>Empresa ABC - 2021</p>
                             </div>
                         </div>
                     </div>
@@ -254,26 +226,24 @@
         <!-- SECCION CONTACTO -->
         <section id="contacto" class="contacto">
             <div class="contenido-seccion">
-                <h2>CONTACTO</h2>
+                <h2>Contacto</h2>
                 <div class="fila">
-                    <!-- Formulario -->
                     <div class="col">
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Nº de teléfono (Añade prefijo si no es Español)">
-                        <input type="text" placeholder="Correo electrónico">
-                        <input type="text" placeholder="Asunto">
-                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button onclick="SacarRatota()">Enviar Mensaje <span class="fa-solid fa-paper-plane"></span></button>
+                        <form action="">
+                            <input type="text" placeholder="Nombre">
+                            <input type="email" placeholder="Email">
+                            <textarea placeholder="Mensaje"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
                     </div>
-                    <!-- Mapa -->
                     <div class="col">
-                        <img src="img/ubicacion.png" alt="Ubicación">
                         <div class="info">
-                            <ul>
-                                <li><i class="fa-solid fa-location-dot"></i> Calle Jorquera 33</li>
-                                <li><i class="fa-solid fa-mobile-screen"></i> Número: 605 83 71 15</li>
-                                <li><i class="fa-solid fa-envelope"></i> Email: emiliojfdez2004@gmail.com</li>
-                            </ul>
+                            <h4><span class="fa-solid fa-location-dot"></span> Ubicación</h4>
+                            <p>Chauchina, Granada, España</p>
+                            <h4><span class="fa-solid fa-envelope"></span> Email</h4>
+                            <p>emiliojfdez2004@gmail.com</p>
+                            <h4><span class="fa-solid fa-phone"></span> Teléfono</h4>
+                            <p>+34 605 83 71 15</p>
                         </div>
                     </div>
                 </div>
@@ -282,12 +252,7 @@
     </main>
 
     <footer>
-        <a href="#inicio" class="arriba"><span class="fa-solid fa-angles-up"></span></a>
-        <div class="redes">
-            <a href="https://www.instagram.com/ejff5404/" aria-label="Instagram"><span class="fa-brands fa-instagram"></span></a>
-            <a href="https://www.linkedin.com/in/emilio-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez/" aria-label="LinkedIn"><span class="fab fa-linkedin-in"></span></a>
-            <a href="https://github.com/EMILIOJFDEZ" aria-label="GitHub"><span class="fab fa-github-alt"></span></a>
-        </div>
+        <p>© 2024 Emilio José Fernández Fernández. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
