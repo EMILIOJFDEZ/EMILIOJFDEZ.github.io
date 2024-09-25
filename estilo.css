@@ -658,8 +658,11 @@ footer .arriba{
         margin-bottom: 20%;
     }
 }
-#Ratota
-{
-    width: 100%;
+#Ratota {
     display: none;
+}
+
+#Ratota img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
 }
