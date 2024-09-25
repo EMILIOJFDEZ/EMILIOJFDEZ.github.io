@@ -10,18 +10,19 @@ html{
     scroll-behavior: smooth;
 }
 /* MENU */
-.contenedor-header{
+.contenedor-header {
     background: #503F8C;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    padding: 20px 0; /* Aumenta el espacio superior e inferior del contenedor */
 }
 
 .contenedor-header .logo a {
     font-family: 'Righteous';
-    font-size: 36px;
+    font-size: 40px; /* Aumenta el tamaño de la fuente del logo */
     color: #00eeff;
     text-decoration: none;
 }
@@ -32,13 +33,14 @@ html{
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: space-evenly; /* Distribuye los elementos del menú */
-    width: 100%; /* Asegura que ocupen todo el ancho */
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .contenedor-header nav ul li a {
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 7px; /* Aumenta el padding para aumentar la altura de cada enlace */
+    font-size: 15px; /* Aumenta el tamaño de la fuente de los enlaces */
     transition: color .5s;
     text-decoration: none;
 }
@@ -72,7 +74,6 @@ html{
     }
 }
 
-
 /* SECCION I N I C I O */
 .inicio{
     background: url(img/fondo.gif);
@@ -83,7 +84,7 @@ html{
     align-items: center;
 }
 .inicio .contenido-banner{
-    padding: 20px;
+    padding-top: 20px;
     background-color: #503F8C;
     max-width: 350px;
     margin: auto;
@@ -91,19 +92,19 @@ html{
     border-radius: 40px;
 }
 .inicio .contenido-banner img{
-    margin-top: 40px;
     border: 10px solid #00eeff;
     display: block;
-    width: 80%;
+    width: 35%;
     margin: auto;
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 42px;
     font-family: 'Righteous';
 }
 .inicio .contenido-banner h2{
+    margin-top: 20px;
     font-size: 15px;
     font-weight: normal;
 }
@@ -120,7 +121,7 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-    .redes a:hover{
+.redes a:hover{
     background-color: #00eeff;
 }
 .sobremi{
@@ -173,7 +174,8 @@ html{
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #000000;
+    background-color: #00eeff;
+    color: #000000;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -484,7 +486,6 @@ html{
 }
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/contact_bg.png);
     background-color: #3C2D73;
     color: #fff;
     padding: 50px 0;
@@ -551,7 +552,6 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
