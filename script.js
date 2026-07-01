@@ -10,11 +10,19 @@ function mostrarOcultarMenu(){
     }
 }
 
-function SacarRatota()
-{
-    var Rata=document.getElementById("Ratota");
-    Rata.style.display="block";
+<script>
+function SacarRatota() {
+    var email = "emiliojfdez2004@gmail.com";
+    var asunto = "Mensaje desde la web";
+    var cuerpo = "Hola, te escribo desde mi página web.";
+
+    var mailtoLink = "mailto:" + email +
+        "?subject=" + encodeURIComponent(asunto) +
+        "&body=" + encodeURIComponent(cuerpo);
+
+    window.location.href = mailtoLink;
 }
+</script>
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
