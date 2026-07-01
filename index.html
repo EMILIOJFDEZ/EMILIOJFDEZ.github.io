@@ -264,19 +264,38 @@
         <section id="contacto" class="contacto">
             <div class="contenido-seccion">
                 <h2>CONTACTO</h2>
+        
                 <div class="fila">
+        
                     <!-- Formulario -->
                     <div class="col">
-                        <input type="text" id="nombre" placeholder="Nombre" required>
-                        <input type="text" id="telefono" placeholder="Nº de teléfono (Añade el prefijo si no es Español)">
-                        <input type="email" id="correo" placeholder="Correo electrónico" required>
-                        <input type="text" id="asunto" placeholder="Asunto" required>
-                        <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        <button type="button" onclick="enviarCorreo()">
-                            Enviar Mensaje <span class="fa-solid fa-paper-plane"></span>
-                        </button>
+        
+                        <form action="https://formsubmit.co/emiliojfdez2004@gmail.com" method="POST">
+        
+                            <!-- Configuración FormSubmit -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
+                            <input type="hidden" name="_template" value="table">
+        
+                            <input type="text" name="Nombre" placeholder="Nombre" required>
+        
+                            <input type="text" name="Teléfono" placeholder="Nº de teléfono (opcional)">
+        
+                            <input type="email" name="Email" placeholder="Correo electrónico" required>
+        
+                            <input type="text" name="Asunto" placeholder="Asunto" required>
+        
+                            <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+        
+                            <button type="submit">
+                                Enviar Mensaje <span class="fa-solid fa-paper-plane"></span>
+                            </button>
+        
+                        </form>
+        
                     </div>
-                    <!-- Mapa -->
+        
+                    <!-- Info -->
                     <div class="col">
                         <div class="info">
                             <ul>
@@ -286,6 +305,7 @@
                             </ul>
                         </div>
                     </div>
+        
                 </div>
             </div>
         </section>
