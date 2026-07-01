@@ -267,12 +267,14 @@
                 <div class="fila">
                     <!-- Formulario -->
                     <div class="col">
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Nº de teléfono (Añade el prefijo si no es Español)">
-                        <input type="text" placeholder="Correo electrónico">
-                        <input type="text" placeholder="Asunto">
-                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button onclick="SacarRatota()">Enviar Mensaje <span class="fa-solid fa-paper-plane"></span></button>
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="text" id="telefono" placeholder="Nº de teléfono (Añade el prefijo si no es Español)">
+                        <input type="email" id="correo" placeholder="Correo electrónico" required>
+                        <input type="text" id="asunto" placeholder="Asunto" required>
+                        <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button type="button" onclick="enviarCorreo()">
+                            Enviar Mensaje <span class="fa-solid fa-paper-plane"></span>
+                        </button>
                     </div>
                     <!-- Mapa -->
                     <div class="col">
