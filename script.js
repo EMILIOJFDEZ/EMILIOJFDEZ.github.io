@@ -10,14 +10,29 @@ function mostrarOcultarMenu(){
     }
 }
 
+// MAILTO con datos del formulario
 function SacarRatota() {
-    var email = "emiliojfdez2004@gmail.com";
-    var asunto = "Mensaje desde la web";
-    var cuerpo = "Hola, te escribo desde mi página web.";
 
-    var mailtoLink = "mailto:" + email +
-        "?subject=" + encodeURIComponent(asunto) +
-        "&body=" + encodeURIComponent(cuerpo);
+    let nombre = document.getElementById("nombre").value;
+    let telefono = document.getElementById("telefono").value;
+    let correo = document.getElementById("correo").value;
+    let asunto = document.getElementById("asunto").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let emailDestino = "emiliojfdez2004@gmail.com";
+
+    let subject = "Contacto web - " + asunto;
+
+    let body =
+        "Nombre: " + nombre + "\n" +
+        "Teléfono: " + telefono + "\n" +
+        "Correo: " + correo + "\n\n" +
+        "Mensaje:\n" + mensaje;
+
+    let mailtoLink =
+        "mailto:" + emailDestino +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
 
     window.location.href = mailtoLink;
 }
