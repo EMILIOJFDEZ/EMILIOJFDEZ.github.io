@@ -10,7 +10,6 @@ function mostrarOcultarMenu(){
     }
 }
 
-<script>
 function SacarRatota() {
     var email = "emiliojfdez2004@gmail.com";
     var asunto = "Mensaje desde la web";
@@ -22,7 +21,7 @@ function SacarRatota() {
 
     window.location.href = mailtoLink;
 }
-</script>
+
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
