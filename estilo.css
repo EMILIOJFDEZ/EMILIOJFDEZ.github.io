@@ -566,6 +566,48 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
+/* ===== FORMULARIO CONTACTO MEJORADO ===== */
+.contacto form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto form input,
+.contacto form textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contacto form input:focus,
+.contacto form textarea:focus{
+    border: 1px solid #00eeff;
+}
+
+.contacto form button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.contacto form button:hover{
+    background-color: #00eeff;
+    color: #000;
+    border-color: #00eeff;
+}
 footer{
     background-color: #503F8C;
     color: #fff;
