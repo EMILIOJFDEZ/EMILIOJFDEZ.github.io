@@ -9,7 +9,6 @@ function mostrarOcultarMenu(){
         menuVisible = true;
     }
 }
-
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
@@ -33,9 +32,30 @@ function efectoHabilidades(){
         habilidades[9].classList.add("proyect");
     }
 }
-
-
-
+function enviarCorreo() {
+    let nombre = document.getElementById("nombre").value.trim();
+    let telefono = document.getElementById("telefono").value.trim();
+    let correo = document.getElementById("correo").value.trim();
+    let asunto = document.getElementById("asunto").value.trim();
+    let mensaje = document.getElementById("mensaje").value.trim();
+    // Validación básica
+    if (!nombre || !correo || !asunto || !mensaje) {
+        alert("Por favor, completa los campos obligatorios.");
+        return;
+    }
+    let emailDestino = "emiliojfdez2004@gmail.com";
+    let subject = "Portfolio - " + asunto;
+    let body =
+        "Nombre: " + nombre + "\n" +
+        "Teléfono: " + telefono + "\n" +
+        "Correo: " + correo + "\n\n" +
+        "Mensaje:\n" + mensaje;
+    let mailtoLink =
+        "mailto:" + emailDestino +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+    window.location.href = mailtoLink;
+}
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
