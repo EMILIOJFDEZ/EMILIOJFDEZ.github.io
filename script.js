@@ -1,6 +1,5 @@
 let menuVisible = false;
 
-// Función que oculta o muestra el menú responsive
 function mostrarOcultarMenu(){
     let nav = document.getElementById("nav");
     if(menuVisible){
@@ -12,13 +11,11 @@ function mostrarOcultarMenu(){
     }
 }
 
-// Ocultar el menú al hacer clic en una opción (en móvil)
 function seleccionar(){
     document.getElementById("nav").classList.remove("responsive");
     menuVisible = false;
 }
 
-// Animación de habilidades al hacer scroll
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
     if (!skills) return;
@@ -43,7 +40,6 @@ function efectoHabilidades(){
     }
 }
 
-// Scroll listener
 window.onscroll = function(){
     efectoHabilidades();
 };
