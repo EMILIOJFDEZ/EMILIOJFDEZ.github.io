@@ -1,30 +1,31 @@
 let menuVisible = false;
 
-// Función que oculta o muestra el menú
+// Función que oculta o muestra el menú responsive
 function mostrarOcultarMenu(){
+    let nav = document.getElementById("nav");
     if(menuVisible){
-        document.getElementById("nav").classList ="";
+        nav.classList.remove("responsive");
         menuVisible = false;
     }else{
-        document.getElementById("nav").classList ="responsive";
+        nav.classList.add("responsive");
         menuVisible = true;
     }
 }
 
+// Ocultar el menú al hacer clic en una opción (en móvil)
 function seleccionar(){
-    document.getElementById("nav").classList = "";
+    document.getElementById("nav").classList.remove("responsive");
     menuVisible = false;
 }
 
-// Animación de habilidades
+// Animación de habilidades al hacer scroll
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
-
     if (!skills) return;
 
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
 
-    if(distancia_skills >= 300){
+    if(distancia_skills >= 200){
         let habilidades = document.getElementsByClassName("progreso");
 
         if (habilidades.length >= 10) {
